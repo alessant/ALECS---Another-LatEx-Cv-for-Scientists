@@ -1,0 +1,140 @@
+%!TEX TS-program = xelatex
+\documentclass{alecs}
+
+\colorlet{fillheader}{darkblue}
+\colorlet{headercolor}{darkblue}
+\colorlet{iconcolor}{green}
+
+% add how many bib resources you need
+% documentation of the BibLatex package at 
+% https://ctan.mirror.garr.it/mirrors/ctan/macros/latex/contrib/biblatex/doc/biblatex.pdf
+\addbibresource{bibliography.bib}
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 HEADER
+%----------------------------------------------------------------------------------------
+\profilepic{alex.jpg}
+
+% center your image 
+\ximage{-6.75}
+\yimage{2.0}
+
+\name{Name}
+\surname{Surname}
+\jobtitle{Job Title}
+\keywords{Keyword 1}{Keyword 2}{Keyword 3}
+
+\makeheader
+
+
+%----------------------------------------------------------------------------------------
+%	 SIDE BAR
+%----------------------------------------------------------------------------------------
+\begin{sidebar}
+	
+\section{Mantra}{} 
+\textit{``Not all who wander are lost" \\ J.R.R. Tolkien, The Fellowship of the Ring.}
+
+
+\section{Interests}{\faHeart}
+Coding, Playing board-games, \\ Working out, Reading.
+
+
+\section{Languages}{\faFlag}
+Italian mother tongue, \\
+Fluent English.
+
+
+\section{Contact~Details}{}
+% If you don't want to type a given infos, just leave the corresponding field blank.
+% e.g., \mail{}
+
+\address{Via Appia Antica, Roma}
+\cellnumber{+39 123 45 67}
+
+\mail{mymail@mail.com}
+\website{nameSurname.github.io} 
+
+\skype{NameSurname}
+\github{namesur}
+\twitter{@namesur}
+\facebook{name.surname}
+\linkedin{NameSurname}
+
+
+\makecontactlist
+
+
+\section{Skills}{\faCode}
+\skills{
+	{Skill1/0.1},{Skill2/0.2},{Skill3/0.3},
+	{Skill4/0.4},{Skill5/0.5},{Skill6/0.6},
+	{Skill7/0.7},{Skill8/0.8},{Skill9/0.9},{Skill10/1.0}}
+
+\makeskills
+
+
+
+\end{sidebar}
+
+
+%----------------------------------------------------------------------------------------
+%	 BODY
+%----------------------------------------------------------------------------------------
+\section[nocolor]{Section with no color}
+You can add an event list to your cv, like that:
+
+\begin{eventlist}
+	\event  
+	{Since 11/19}
+	{Ph.D. student in Computer Science}
+	{University of Salerno}
+	{}
+	
+	\event  
+	{09/15-02/18}
+	{Master Degree in Computer Science.}
+	{110/110 cum laude}
+	{University of Salerno}
+\end{eventlist}
+
+
+\section[]{Section with a color}
+For shorter listed information, you can use a tiny event list, instead.
+
+\begin{tinyeventlist}
+	\tinyevent
+	{Since 11/20}
+	{Teaching support for the Computer Architecture course.}
+	
+	\tinyevent  
+	{AY 19/20}
+	{Teaching support for the Computational Theory course.}
+\end{tinyeventlist}
+
+
+\section[]{Another section with a color}
+What is really useful - at least for me - is the possibility to add a scattered bibliography to a cv. To do that, just type the command \texttt{\textbackslash printbibliography[heading=none,...]}.You can also choose which entries of your bibliography to print using the parameter \texttt{keyword} - have a look at the documentation of \href{https://ctan.mirror.garr.it/mirrors/ctan/macros/latex/contrib/biblatex/doc/biblatex.pdf}{\underline{BibLatex}} for that.
+
+\printbibliography[heading=none,keyword=key1]
+
+
+\section[defaultcolor]{Section with a default color}
+\printbibliography[heading=none,keyword=key2]
+
+
+\section[]{Again another section with a color}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+
+\end{document}
+
+
+
+
+
+
