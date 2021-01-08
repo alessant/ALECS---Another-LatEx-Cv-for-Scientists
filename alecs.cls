@@ -28,8 +28,6 @@
 \RequirePackage[quiet]{fontspec}
 \RequirePackage[math-style=TeX]{unicode-math}
 
-\RequirePackage[absolute,overlay]{textpos}
-
 \RequirePackage{fontawesome}
 \RequirePackage{marvosym}
 
